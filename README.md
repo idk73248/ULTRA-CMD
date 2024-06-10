@@ -1,0 +1,1 @@
+Simple project made with ai. What else is there? too lazy to compile it myself so just run the py
