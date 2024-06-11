@@ -58,7 +58,7 @@ Available commands:
 - install_packages: Installs commonly used Python packages one by one.
 - custompip <package>: Installs a specified Python package.
 - clear: Clears the terminal.
-- yellow: Changes the terminal text color to yellow.
+- joe: Changes the terminal text color to yellow.
 - help: Lists all available commands.
 - exit: Exits the script.
 """)
@@ -81,7 +81,7 @@ def custompip(package):
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
 
-def yellow():
+def joe():
     os.system('color 06')  # Change the terminal text color to yellow on Windows
 
 def main():
@@ -107,8 +107,8 @@ def main():
             custompip(package)
         elif command == 'clear':
             clear()
-        elif command == 'yellow':
-            yellow()
+        elif command == 'joe':
+            joe()
         elif command == 'help':
             help_command()
         elif command == 'exit':
